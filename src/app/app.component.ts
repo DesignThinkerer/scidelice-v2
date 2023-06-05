@@ -11,13 +11,16 @@ import { IonicModule } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Home', url: '/folder/home', icon: 'home' },
+    { title: 'Profile', url: '/folder/profile', icon: 'person' },
+    { title: 'How', url: '/folder/how', icon: 'flask' },
+    { title: 'Why', url: '/folder/why', icon: 'school' },
+    { title: 'Pantry', url: '/folder/pantry', icon: 'snow' },
+    { title: 'Planner', url: '/folder/planner', icon: 'calendar' },
+    { title: 'Recipes', url: '/folder/recipes', icon: 'journal' },
+    { title: 'Settings', url: '/folder/settings', icon: 'settings' },
+    { title: 'Success', url: '/folder/success', icon: 'medal' },
+    { title: 'Tools', url: '/folder/tools', icon: 'calculator' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }

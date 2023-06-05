@@ -26,9 +26,17 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(12);
-    expect(menuItems[0].textContent).toContain('Inbox');
-    expect(menuItems[1].textContent).toContain('Outbox');
+    expect(menuItems.length).toEqual(10);
+    expect(menuItems[0].textContent).toContain('Home');
+    expect(menuItems[1].textContent).toContain('Profile');
+    expect(menuItems[2].textContent).toContain('How');
+    expect(menuItems[3].textContent).toContain('Why');
+    expect(menuItems[4].textContent).toContain('Pantry');
+    expect(menuItems[5].textContent).toContain('Planner');
+    expect(menuItems[6].textContent).toContain('Recipes');
+    expect(menuItems[7].textContent).toContain('Settings');
+    expect(menuItems[8].textContent).toContain('Success');
+    expect(menuItems[9].textContent).toContain('Tools');
   });
 
   it('should have urls', async () => {
@@ -36,12 +44,16 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-item');
-    expect(menuItems.length).toEqual(12);
-    expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual(
-      '/folder/inbox'
-    );
-    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual(
-      '/folder/outbox'
-    );
+    expect(menuItems.length).toEqual(10);
+    expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/folder/home');
+    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/folder/profile');
+    expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual('/folder/how');
+    expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual('/folder/why');
+    expect(menuItems[4].getAttribute('ng-reflect-router-link')).toEqual('/folder/pantry');
+    expect(menuItems[5].getAttribute('ng-reflect-router-link')).toEqual('/folder/planner');
+    expect(menuItems[6].getAttribute('ng-reflect-router-link')).toEqual('/folder/recipes');
+    expect(menuItems[7].getAttribute('ng-reflect-router-link')).toEqual('/folder/settings');
+    expect(menuItems[8].getAttribute('ng-reflect-router-link')).toEqual('/folder/success');
+    expect(menuItems[9].getAttribute('ng-reflect-router-link')).toEqual('/folder/tools');
   });
 });
