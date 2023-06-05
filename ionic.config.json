@@ -1,0 +1,7 @@
+{
+  "name": "scidelice.tfe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
