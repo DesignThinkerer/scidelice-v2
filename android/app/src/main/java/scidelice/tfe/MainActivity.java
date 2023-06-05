@@ -1,4 +1,4 @@
-package scidelice.tfe;
+package com.scidelice;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "scidelice.tfe"
+    namespace "com.scidelice"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "scidelice.tfe"
+        applicationId "com.scidelice"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

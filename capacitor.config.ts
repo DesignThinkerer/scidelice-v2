@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'scidelice.tfe',
-  appName: 'scidelice.tfe',
+  appId: 'com.scidelice',
+  appName: 'com.scidelice',
   webDir: 'www',
   server: {
     androidScheme: 'https'
