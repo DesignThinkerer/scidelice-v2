@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-folder',
+  selector: 'app-page',
   templateUrl: './folder.page.html',
   styleUrls: ['./folder.page.scss'],
   standalone: true,
