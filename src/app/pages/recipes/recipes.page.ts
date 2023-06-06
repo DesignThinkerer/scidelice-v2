@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -12,7 +13,11 @@ import { IonicModule } from '@ionic/angular';
 })
 export class RecipesPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router){}
+
+  navigate(path: string){
+    this.router.navigateByUrl(path);
+  } //TODO: find a better way to navigate to the new recipe page
 
   ngOnInit() {
   }
