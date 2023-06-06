@@ -11,16 +11,16 @@ import { IonicModule } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: '/folder/home', icon: 'home' },
-    { title: 'Profile', url: '/folder/profile', icon: 'person' },
-    { title: 'How', url: '/folder/how', icon: 'flask' },
-    { title: 'Why', url: '/folder/why', icon: 'school' },
-    { title: 'Pantry', url: '/folder/pantry', icon: 'snow' },
-    { title: 'Planner', url: '/folder/planner', icon: 'calendar' },
-    { title: 'Recipes', url: '/folder/recipes', icon: 'journal' },
-    { title: 'Settings', url: '/folder/settings', icon: 'settings' },
-    { title: 'Success', url: '/folder/success', icon: 'medal' },
-    { title: 'Tools', url: '/folder/tools', icon: 'calculator' }
+    { title: 'Home', url: '/home', icon: 'home' },
+    { title: 'Profile', url: '/profile', icon: 'person' },
+    { title: 'How', url: '/how', icon: 'flask' },
+    { title: 'Why', url: '/why', icon: 'school' },
+    { title: 'Pantry', url: '/pantry', icon: 'snow' },
+    { title: 'Planner', url: '/planner', icon: 'calendar' },
+    { title: 'Recipes', url: '/recipes', icon: 'journal' },
+    { title: 'Settings', url: '/settings', icon: 'settings' },
+    { title: 'Success', url: '/success', icon: 'medal' },
+    { title: 'Tools', url: '/tools', icon: 'calculator' }
   ];
   constructor() {}
 }

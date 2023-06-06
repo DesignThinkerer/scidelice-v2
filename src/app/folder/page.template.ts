@@ -4,17 +4,17 @@ import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-page',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  templateUrl: './page.template.html',
+  styleUrls: ['./page.template.scss'],
   standalone: true,
   imports: [IonicModule],
 })
-export class FolderPage implements OnInit {
-  public folder!: string;
+export class PageTemplate implements OnInit {
+  public page!: string;
   private activatedRoute = inject(ActivatedRoute);
   constructor() {}
 
   ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.page = this.activatedRoute.snapshot.paramMap.get('id') as string;
   }
 }
