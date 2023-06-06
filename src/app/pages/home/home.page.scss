@@ -1,0 +1,13 @@
+.level{
+    font-weight: bold;
+}
+
+ion-card{
+    ion-card-subtitle{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        white-space: normal;//default = nowrap
+    }
+}
