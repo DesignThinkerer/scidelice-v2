@@ -12,7 +12,8 @@ import { IonicModule } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
-    { title: 'Profile', url: '/profile', icon: 'person' },
+    // { title: 'Profile', url: '/profile', icon: 'person' },
+    { title: 'Login', url: '/login', icon: 'log-in' },
     { title: 'How', url: '/how', icon: 'flask' },
     { title: 'Why', url: '/why', icon: 'school' },
     { title: 'Pantry', url: '/pantry', icon: 'snow' },
@@ -20,7 +21,7 @@ export class AppComponent {
     { title: 'Recipes', url: '/recipes', icon: 'journal' },
     { title: 'Settings', url: '/settings', icon: 'settings' },
     { title: 'Success', url: '/success', icon: 'medal' },
-    { title: 'Tools', url: '/tools', icon: 'calculator' }
+    { title: 'Tools', url: '/tools', icon: 'calculator' },
   ];
   constructor() {}
 }
