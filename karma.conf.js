@@ -39,6 +39,10 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+
+    node: {
+      fs: 'empty' //attempt to fix the fs error when running tests
+    }
   });
 };
