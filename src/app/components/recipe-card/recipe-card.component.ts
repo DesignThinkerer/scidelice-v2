@@ -9,9 +9,17 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule]
 })
 export class RecipeCardComponent  implements OnInit {
-  // declaring attributes to control the component
-  // input is a decorator that allows the parent component to pass data to the child component
+  // recipe toggles
   @Input() hasNotes: boolean = true;
+
+  // recipe data
+  @Input() recipeName: string = 'A cool recipe';
+  @Input() recipeDifficulty: string = 'unknown';
+  @Input() recipeImage: string = '/assets/img/fallafel.png';
+  @Input() recipeImageAlt: string = 'this is a picture of a recipe';
+  @Input() recipeNotes: string = 'No notes yet!';
+
+
   constructor() { }
 
   ngOnInit() {}
