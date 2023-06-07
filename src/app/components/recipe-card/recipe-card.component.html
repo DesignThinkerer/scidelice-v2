@@ -8,7 +8,11 @@
       <p class="recipe-head">
       <img src={{recipeImage}} alt={{recipeImageAlt}}>
       <ion-label>
-        <p>Difficulty: <span class="level">{{ recipeDifficulty }}</span></p>
+        <p>
+          <ion-icon *ngIf="recipeDifficulty === 'easy'" name="happy-outline" color="success"/>
+          <ion-icon *ngIf="recipeDifficulty === 'medium'" name="sad-outline" color="warning"/>
+          <ion-icon *ngIf="recipeDifficulty === 'hard'" name="skull-outline" color="danger"/>
+          Difficulty: <span class="level">{{ recipeDifficulty }}</span></p>
       </ion-label>
       </p>
     </ion-item>
