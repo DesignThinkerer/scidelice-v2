@@ -16,7 +16,8 @@
       </ion-label>
       </p>
     </ion-item>
-    <ion-item lines="none"  *ngIf="hasNotes">
+    <!-- Display the notes only if there are notes & we allow notes to be displayed -->
+    <ion-item lines="none"  *ngIf="hasNotes && recipeNotes">
       <ion-label>
         <p><em>Notes: </em>{{ recipeNotes }}</p>
       </ion-label>
