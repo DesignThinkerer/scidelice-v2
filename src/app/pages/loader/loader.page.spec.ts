@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 import { LoaderPage } from "./loader.page";
 import { IonicModule } from "@ionic/angular/ionic-module";
+import "jasmine";
 
 describe('LoaderPage', () => {
     let component: LoaderPage;
