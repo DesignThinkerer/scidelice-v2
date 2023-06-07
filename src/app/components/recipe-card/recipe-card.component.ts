@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common'; // required for ngIf
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 @Component({
   selector: 'app-recipe-card',
@@ -10,7 +10,8 @@ import { IonicModule } from '@ionic/angular';
 })
 export class RecipeCardComponent  implements OnInit {
   // declaring attributes to control the component
-  hasNotes: boolean = true;
+  // input is a decorator that allows the parent component to pass data to the child component
+  @Input() hasNotes: boolean = true;
   constructor() { }
 
   ngOnInit() {}
